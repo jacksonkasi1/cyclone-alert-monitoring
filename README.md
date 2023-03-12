@@ -42,3 +42,7 @@ npm run start
 ## License
 
 This project is licensed under the MIT License. Feel free to use and modify it for your own purposes.
+
+## Blog:
+
+ [Building a Cyclone Alert Monitoring System using Checkly, Playwright and Node.js](https://jacksonkasi.hashnode.dev/building-a-cyclone-alert-monitoring-system-using-checkly-playwright-and-nodejs#heading-checking-for-new-alerts)
