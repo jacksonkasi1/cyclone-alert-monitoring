@@ -15,7 +15,7 @@ To run this project, you need to have the following software installed:
 1. Clone this repository using the following command:
 
 ```bash
-git clone https://github.com/your-username/cyclone-alert-monitoring.git
+git clone https://github.com/jacksonkasi1/cyclone-alert-monitoring.git
 ```
 
 2. Navigate to the project directory:
