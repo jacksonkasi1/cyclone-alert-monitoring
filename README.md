@@ -1,49 +1,44 @@
+# Cyclone Alert Monitoring with Playwright and Node.js
 
-# Cyclone Alert Monitoring
+This is a simple project that demonstrates how to use [checkly](https://www.checklyhq.com) and [Node.js](https://nodejs.org/en) to build a real-time monitoring system for cyclone alerts issued by the US National Weather Service. The monitoring system periodically checks for new alerts in a specific area (e.g., a state) and sends an email notification when a new alert is issued. This project can serve as a starting point for building similar monitoring systems for other types of alerts, such as earthquakes, fires, or pandemics.
 
-# Checkly Monitoring-as-code:  Cyclone Alert Monitoring Project
+## Requirements
 
-This example project shows how you can use the Checkly CLI in a Monitoring-as-Code (MaC) workflow. We are using the
-https://checklyhq.com website as a monitoring target.
+To run this project, you need to have the following software installed:
 
-1. Write API Checks and Playwright-powered Browser Checks!
-2. Test -> Deploy: now you have your app monitored around the clock. All from your code base.
+- Node.js v14 or later
+- Playwright
+- SendGrid API Key
 
-```
-npm create @checkly/cli -- --template boilerplate-project
-```
+## Getting Started
 
-## Project Structure
+1. Clone this repository using the following command:
 
-This project has the basic boilerplate files needed to get you started.
-
-```
-.
-|-- __checks__
-|   |-- api.check.ts
-|   `-- homepage.spec.ts
-|-- checkly.config.ts
-`-- package.json
+```bash
+git clone https://github.com/your-username/cyclone-alert-monitoring.git
 ```
 
-- Running `npx checkly test` will look for `.check.ts` files and `.spec.ts` in `__checks__` directories and execute them in a dry run.
+2. Navigate to the project directory:
 
-- Running `npx check deploy` will deploy your checks to Checkly, attach alert channels, and run them on a 10m schedule in the 
-region `us-east-1` and `eu-west-1`
+```bash
+cd cyclone-alert-monitoring
+```
 
-## CLI Commands
+3. Install the required dependencies:
+```bash
+npm install
+```
 
-Run the core CLI commands with `npx checkly <command>` 
+4. Rename `.env.example` file to `.env` and fill in your SendGrid API key and email address.
 
-| Command              | Action                                           |
-|:---------------------|:-------------------------------------------------|
-| `npx checkly test`   | Dry run all the checks in your project           |
-| `npx checkly deploy` | Deploy your checks to the Checkly cloud          |
-| `npx checkly login`  | Log in to your Checkly account                   |
-| `npx checkly --help` | Show help for each command.                      |
+5. Replace `STATE_CODE` variable in `index.ts` with your desired US state code.
 
-## Questions?
+Start the monitoring system:
 
-Check [our CLI docs](https://github.com/checkly/checkly-cli), the [main Checkly docs](https://checklyhq.com/docs) or 
-join our [Slack community](https://checklyhq.com/slack)
+```bash
+npm run start
+```
 
+## License
+
+This project is licensed under the MIT License. Feel free to use and modify it for your own purposes.
