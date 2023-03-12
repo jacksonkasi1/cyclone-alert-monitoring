@@ -1,8 +1,8 @@
 import { defineConfig } from '@checkly/cli'
 
 const config = defineConfig({
-  projectName: 'Boilerplate Project',
-  logicalId: 'boilerplate-project',
+  projectName: 'Cyclone Alert',
+  logicalId: 'cyclone-alert-project',
   repoUrl: 'https://github.com/checkly/checkly-cli',
   checks: {
     locations: ['us-east-1', 'eu-west-1'],
