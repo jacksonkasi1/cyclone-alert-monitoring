@@ -1,3 +1,5 @@
+![Cyclone Alert Monitor Status](https://api.checklyhq.com/v1/badges/checks/e79485db-df7c-4bfb-b65e-9552ad6db42b?style=for-the-badge&theme=light)
+
 # Cyclone Alert Monitoring with Playwright and Node.js
 
 This is a simple project that demonstrates how to use [checkly](https://www.checklyhq.com) and [Node.js](https://nodejs.org/en) to build a real-time monitoring system for cyclone alerts issued by the US National Weather Service. The monitoring system periodically checks for new alerts in a specific area (e.g., a state) and sends an email notification when a new alert is issued. This project can serve as a starting point for building similar monitoring systems for other types of alerts, such as earthquakes, fires, or pandemics.
